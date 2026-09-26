@@ -18,6 +18,10 @@ const links = [
     href: "#projects",
   },
   {
+    name: "Experience",
+    href: "#experience",
+  },
+  {
     name: "Contact",
     href: "#contact",
   },
@@ -41,7 +45,10 @@ export default function Navbar() {
             {links.map((link) => {
               return (
                 <NavigationMenuItem key={link.href}>
-                  <NavigationMenuLink render={<Link href={link.href}></Link>}>
+                  <NavigationMenuLink
+                    className="hover:bg-white/50 focus:bg-white/50"
+                    render={<Link href={link.href}></Link>}
+                  >
                     {link.name}
                   </NavigationMenuLink>
                 </NavigationMenuItem>
