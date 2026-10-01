@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, Press_Start_2P } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Background from "@/components/ui/background";
 import Navbar from "@/components/ui/navbar";
@@ -14,13 +14,6 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const pressStart2P = Press_Start_2P({
-  weight: "400",
-  display: "swap",
-  variable: "--font-press-start",
   subsets: ["latin"],
 });
 
@@ -40,7 +33,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         geistMono.variable,
         "font-sans",
         inter.variable,
-        pressStart2P.variable,
       )}
     >
       <body className="min-h-full flex flex-col">
