@@ -12,6 +12,7 @@ export default function Background() {
         fill
         placeholder="blur"
         sizes="100vw"
+        unoptimized
       />
       <div className="absolute inset-0 bg-black/15"></div>
     </div>

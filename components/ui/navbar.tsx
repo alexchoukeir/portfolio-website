@@ -30,7 +30,7 @@ const links = [
 export default function Navbar() {
   return (
     <header className="fixed w-full inset-x-0 top-4 z-50 start-0">
-      <div className="max-w-screen-xl rounded-2xl flex flex-wrap items-center justify-between mx-auto px-6 py-4 transition-colors duration-300 bg-white/80 backdrop-blur-xl border border-black shadow-[0px_4px_0px_0px_rgba(0,0,0,1)]">
+      <div className="max-w-screen-xl rounded-2xl flex flex-wrap items-center justify-between mx-auto px-6 py-4 transition-colors duration-300 text-white bg-black/40 backdrop-blur-xl border border-black shadow-[0px_3px_0px_0px_rgba(0,0,0,1)]">
         <Link
           href="#"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -46,7 +46,7 @@ export default function Navbar() {
               return (
                 <NavigationMenuItem key={link.href}>
                   <NavigationMenuLink
-                    className="hover:bg-white/50 focus:bg-white/50"
+                    className="font-medium hover:bg-white/50 focus:bg-white/50"
                     render={<Link href={link.href}></Link>}
                   >
                     {link.name}
