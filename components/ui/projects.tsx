@@ -16,7 +16,7 @@ export default function Projects() {
         {projects.map((proj) => (
           <Card
             key={proj.name}
-            className="flex flex-row gap-0 items-start overflow-hidden min-w-0 bg-white/80 backdrop-blur-xl border border-black shadow-[0px_4px_0px_0px_rgba(0,0,0,1)]"
+            className="flex flex-row gap-0 items-start overflow-hidden min-w-0"
           >
             <DynamicIcon
               name={proj.icon}
