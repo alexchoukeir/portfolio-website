@@ -7,29 +7,9 @@ import {
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
-
-const links = [
-  {
-    name: "About",
-    href: "#about",
-  },
-  {
-    name: "Projects",
-    href: "#projects",
-  },
-  {
-    name: "Experience",
-    href: "#experience",
-  },
-  {
-    name: "Skills",
-    href: "#skills",
-  },
-  {
-    name: "Contact",
-    href: "#contact",
-  },
-];
+import Image from "next/image";
+import logo from "@/public/logo2.svg";
+import { links } from "@/data/links";
 
 export default function Navbar() {
   return (
@@ -39,6 +19,14 @@ export default function Navbar() {
           href="#"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
+          <Image
+            className="h-4"
+            src={logo}
+            alt="Logo"
+            width={32}
+            height={32}
+            style={{ width: "auto" }}
+          />
           <span className="self-center text-xl text-heading font-semibold whitespace-nowrap">
             Alexander C.
           </span>
