@@ -6,9 +6,7 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { cn } from "@/lib/utils";
 import { links } from "@/data/links";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import linkedin from "@/public/linkedin.svg";
@@ -41,10 +39,7 @@ export default function Footer() {
                 return (
                   <NavigationMenuItem key={link.href}>
                     <NavigationMenuLink
-                      className={cn(
-                        navigationMenuTriggerStyle(),
-                        "hover:underline me-4 md:me-6",
-                      )}
+                      className="hover:underline me-4 md:me-6"
                       render={<Link href={link.href}></Link>}
                     >
                       {link.name}

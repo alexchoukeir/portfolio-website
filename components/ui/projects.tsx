@@ -1,6 +1,5 @@
 import { projects } from "@/data/projects";
 import { Card, CardDescription, CardHeader, CardTitle } from "./card";
-import Image from "next/image";
 import { Badge } from "./badge";
 import Link from "next/link";
 import { Code, ExternalLink } from "lucide-react";
@@ -8,7 +7,7 @@ import { DynamicIcon } from "lucide-react/dynamic";
 
 export default function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-5xl px-5 pt-30">
+    <section id="projects" className="mx-auto max-w-5xl px-5 pt-70">
       <h2 className="text-3xl font-bold text-white [text-shadow:0,4px_18px_rgba(0,0,0,0.5)]">
         Projects
       </h2>

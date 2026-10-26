@@ -2,7 +2,7 @@ import { skills } from "@/data/skills";
 
 export default function Skills() {
   return (
-    <section id="skills" className="mx-auto max-w-5xl px-5 pt-30">
+    <section id="skills" className="mx-auto max-w-5xl px-5 pt-70">
       <h2 className="text-3xl font-bold text-white [text-shadow:0,4px_18px_rgba(0,0,0,0.5)]">
         Skills
       </h2>
