@@ -1,5 +1,5 @@
 import Image from "next/image";
-import background from "@/public/background.png";
+import background from "@/public/background.jpg";
 
 export default function Background() {
   return (
@@ -8,7 +8,7 @@ export default function Background() {
         src={background}
         className="object-cover"
         alt="Background"
-        preload
+        priority
         fill
         placeholder="blur"
         sizes="100vw"
