@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+    <img src="public/logo.svg" alt="Logo" width="120" height="120">
+    <h1>Alexander Choukeir's Portfolio Website</h1>
+</div>
 
-## Getting Started
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
-First, run the development server:
+Welcome to my portfolio website ([alexchoukeir.com](https://www.alexchoukeir.com))! This web application was built using Next.js. It showcases my projects, skills, and contact information.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Key Features
+
+- **Modern, stunning UI**: Designed to be highly visually appealing using the latest design trends.
+- **Responsive Design**: Automatically adapts to any screen size, ensuring a seamless browsing experience on desktop, tablet and mobile.
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js, Vinext
+- **Deployment and Infrastructure**: Cloudflare
+- **Tooling and Workspace**: pnpm
+
+## 📁 Project Structure
+
+```plaintext
+portfolio-website/
+│
+├── app/            # Routing and layout
+├── components/     # Components used to build different sections of the website
+├── data/           # Website data (projects, skills)
+├── public/         # Static assets
+├── package.json    # Project configuration file
+└── README.md       # README file
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **pnpm**
+- **Node.js**
 
-## Learn More
+### Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+git clone https://github.com/alexchoukeir/portfolio-website.git
+cd portfolio-website
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install Dependencies**
 
-## Deploy on Vercel
+```bash
+pnpm install
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Running the project
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm dev
+```
+
+- **Next.js frontend**: `localhost:3000`
+
+## License
+
+This project is licensed under the [MIT License](License)
